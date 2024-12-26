@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+    
+  }
+
+  body {
+    display: flex;
+    height: 100vh;
+}
+/* misc */
+.links,
+.links:visited,
+.links:after,
+.links:hover,
+.links:active {
+    color: #37352f;
+    text-decoration: none;
+}
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    border-right: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    background:#ffd1df ;
+}
+
+.workspace-header {
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #37352f;
+}
+
+.pages-section {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.add-page-button {
+    margin: 10px;
+    padding: 8px 14px;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #787774;
+    text-align: left;
+    font-size: 14px;
+}
+
+.add-page-button:hover {
+    background: #efefef;
+}
+
+/* Page List Styles */
+.page-list-item {
+    padding: 6px 10px;
+    margin: 1px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #37352f;
+}
+
+.page-list-item:hover {
+    background: #efefef;
+}
+.page-list-item {
+    transition: background 0.3s ease; 
+}
+.page-icon {
+    font-size: 16px;
+}
+
+/* Main Content */
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.top-bar {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.page-title {
+    font-size: 14px;
+    color: #37352f;
+}
+
+.content-area {
+    flex-grow: 1;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Editable Blocks */
+.block {
+    padding: 3px 2px;
+    margin: 1px 0;
+    min-height: 28px;
+    font-size: 16px;
+    color: #37352f;
+    border-radius: 3px;
+}
+
+.block:hover {
+    background: #f1f1f0;
+}
+
+.block:focus {
+    outline: none;
+    background: #ebeae9;
+}
+
+
+/* Command Menu (Hidden by default) */
+.command-menu {
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-width: 220px;
+    display: none;
+}
+
+.command-item {
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.command-item:hover {
+    background: #efefef;
+}
