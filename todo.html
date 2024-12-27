@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lena's Workspace</title>
     <link rel="stylesheet" href="./style.css">
-    <style href="./app.js"></style>
+    <script src="./app.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -36,15 +36,20 @@
     <!-- Main Content -->
     <div class="main-container">
         <div class="top-bar">
-            <div class="page-title">To-do List</div>
+            <div class="page-title">Create and complete your tasks here!</div>
             <div class="actions">
                 <button class="add-page-button">Share</button>
             </div>
         </div>
         <div class="content-area">
             <div class="block" contenteditable="true">
-                I will create a functioning to do list where you can add what you plan to do for the week and maybe a calendar or something like that we'll see 
-            </div>
+             </div>
+<div class="box">
+    <input type="text" placeholder="+ Add task" id="taskInput">
+</div>
+<ul id="taskList"></ul>
+
+
         </div>
     </div>
 
