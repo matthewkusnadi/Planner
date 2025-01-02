@@ -212,3 +212,15 @@ list-style-type: none;
  }
  
  
+/* Food places */
+.food-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.food__list {
+    list-style-type: none;
+    margin: 0.5rem 0;
+}

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lena's Workspace</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
+    <script defer src="./app.js"></script> <!-- Use defer to ensure JS loads after HTML -->
 </head>
 <body>
     <div class="sidebar">
         <div class="workspace-header">
-           <a class="links" href="./index.html">🍒 Lena's Workspace </a> 
+            <a class="links" href="./index.html">🍒 Lena's Workspace</a>
         </div>
         <div class="pages-section">
             <div class="page-list-item">
@@ -42,8 +42,11 @@
             </div>
         </div>
         <div class="content-area">
-            <div class="block" contenteditable="true">
-                We can list our food places into catergories and their location 
+            <div class="block">
+                <p>We can list our food places into categories and their location:</p>
+            </div>
+            <div class="box" id="food-list">
+                <!-- Food items will be dynamically inserted here -->
             </div>
         </div>
     </div>

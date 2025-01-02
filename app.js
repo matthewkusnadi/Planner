@@ -62,3 +62,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
  });
+
+//  Food places
+
+const foodPlace = [
+    {
+      Restaurant: "ITO",
+      Cuisine: "Japanese/Italian Fusion",
+      Location: "Surry Hills",
+      Rating: "5 stars",
+      Map: "https://maps.app.goo.gl/DsTyH3NGkEPNe8U47",
+      Review: "Good set menu for its price.",
+    },
+    {
+      Restaurant: "Acai Junky",
+      Cuisine: "Brazilian",
+      Location: "Bankstown",
+      Rating: "5 stars",
+      Map: "https://maps.app.goo.gl/HcEhJFxmPmxCnvim9",
+      Review: "Love the acai and sauce.",
+    },
+  ];
+  
+  // Select the container
+  const foodListContainer = document.getElementById("food-list");
+  
+  // Iterate through the foodPlace array
+  foodPlace.forEach((place) => {
+    // Create a container for each place
+    const item = document.createElement("div");
+    item.className = "food-item";
+  
+    // Populate the content
+    item.innerHTML = `
+      <li class="food__list"><strong>Restaurant Name:</strong> ${place.Restaurant}</li>
+      <li class="food__list"><strong>Cuisine:</strong> ${place.Cuisine}</li>
+      <li class="food__list"><strong>Location:</strong> ${place.Location}</li>
+      <li class="food__list"><strong>Rating:</strong> ${place.Rating}</li>
+      <li class="food__list"><strong>Map Location:</strong> <a href="${place.Map}" target="_blank">View</a></li>
+      <li class="food__list"><strong>Review:</strong> ${place.Review}</li>
+    `;
+  
+    // Append to the container
+    foodListContainer.appendChild(item);
+  });
+  
